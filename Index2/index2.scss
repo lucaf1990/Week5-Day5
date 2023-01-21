@@ -4,7 +4,7 @@
 @import "variables2";
 
 html {
-  max-width: 100vw;
+  max-width: 100%;
   min-height: 100vh;
 }
 body {
@@ -19,14 +19,13 @@ p {
   font-family: "Josefin Slab", serif;
 }
 header {
-  max-width: 100%;
   font-size: 1em;
 }
 main {
   max-width: 100%;
 }
 #january {
-  width: 94%;
+  width: 85%;
   height: 10%;
   border: 1px solid rgb(255, 255, 255);
   font-weight: bold;
@@ -35,6 +34,9 @@ main {
   justify-content: center;
   box-shadow: 7px 9px 7px 0px rgb(190 175 127);
   background-color: rgb(255, 255, 255);
+  @media screen and (max-width: 688px) {
+    width: 83%;
+  }
 }
 
 #button {
@@ -48,17 +50,25 @@ main {
 
 #last {
   bottom: 309px;
-  right: -450px;
+  left: 100px;
   font-size: 3em;
   color: white;
   text-align: end;
   width: max-content;
+  @media screen and (max-width: 840px) {
+    font-size: 2em;
+  }
+  @media screen and(max-width:600px) {
+    font-size: 1.6em;
+  }
 }
-
 #icons {
   font-size: 2em;
   &:hover {
     cursor: pointer;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 }
 .footer {
@@ -138,6 +148,9 @@ h2 {
   width: 500px;
   color: rgb(31, 73, 7);
   margin-left: 200px;
+  @media screen and(max-width:810px) {
+    font-size: 0.5em;
+  }
 }
 #imp {
   padding-left: 18rem !important;
@@ -149,18 +162,22 @@ h2 {
 #card {
   border-radius: 20px;
   overflow: hidden;
+  margin-top: 20px;
 }
 #card1 {
   border-radius: 20px;
   overflow: hidden;
+  margin-top: 20px;
 }
 #card2 {
   border-radius: 20px;
   overflow: hidden;
+  margin-top: 20px;
 }
 #card3 {
   border-radius: 20px;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 i:hover {

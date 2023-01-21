@@ -41,12 +41,18 @@ function deleteParagraph() {
 }
 
 let button = document.getElementById("stop-btn");
-button.addEventListener("click", deleteParagraph);
+button.removeEventListener("click", deleteParagraph);
 
 document.getElementById("deliciousFood").addEventListener("click", function () {
   document.getElementById("piccoloGioco").style.display = "block";
 });
-let x = document.createElement("p");
-let y = document.getElementById("piccoloGioco");
-x.innerText = "Grazie!!";
-y.appendChild(x);
+
+function createPar() {
+  let thanksDisc = document.createElement("p");
+  let y = document.getElementById("piccoloGioco");
+  thanksDisc.innerHTML =
+    "Oh finally...Thanks for this.. Here a discount code for your next time.. DF8596 expires on May 2024";
+  y.appendChild(thanksDisc);
+}
+
+button.addEventListener("click", createPar);

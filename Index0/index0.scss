@@ -1,0 +1,27 @@
+@import "variables";
+
+body {
+  background: $maincolor;
+  height: 100vh;
+}
+
+div {
+  width: 300px;
+  height: 100px;
+  border: $border-box;
+  border-radius: 20px;
+  box-shadow: $shadow;
+}
+a {
+  text-decoration: none;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: $fontCol;
+  &:hover {
+    scale: 1.1;
+  }
+}
+span {
+  font-size: 0.8em;
+  position: absolute;
+}

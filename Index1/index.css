@@ -1,0 +1,51 @@
+body {
+  background: linear-gradient(rgb(70, 57, 21), rgba(219, 196, 93, 0.863));
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  border: 5px rgb(99, 77, 19);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 1px 15px 6px rgb(171, 149, 90);
+  -webkit-animation: div;
+          animation: div;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.animazioneDiv1 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.animazioneDiv2 {
+  transition: left 5s cubic-bezier(0, 0, 1, 1);
+}
+
+.animazioneDiv3 {
+  transition: left 5s cubic-bezier(0, 0, 1, 1);
+}
+
+.animazioneDiv4 {
+  transition: left 5s cubic-bezier(0, 0, 1, 1);
+}/*# sourceMappingURL=index.css.map */
